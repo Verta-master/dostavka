@@ -1,0 +1,51 @@
+.cart {
+  position: relative;
+  display: block;
+  width: 190px;
+  padding-left: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #000;
+  line-height: 20px;
+  border-left: 1px solid #f2f2f2;
+  background-image: url(../img/icons/icon-bag.svg);
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  background-position: left 40px center;
+  
+  b {
+    display: block;
+  }
+  
+  &:hover,
+  &:active {
+    .cart__price {
+      color: #000;
+    }
+  }
+}
+
+.cart__price {
+  display: block;
+  color: #909090;
+  font-size: 14px;
+}
+
+.cart__number {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 55px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-color: @yellow;
+}

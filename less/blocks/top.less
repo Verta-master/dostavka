@@ -1,0 +1,125 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__main {
+  flex-grow: 1;
+}
+
+.top__nav,
+.top__service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__nav {
+  padding-left: 10px;
+}
+
+.top__service {
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.top__btn {
+  display: block;
+  width: 190px;
+  height: 55px;
+  padding: 20px;
+  padding-left: 50px;
+  line-height: 1;
+  color: #000;
+  background-color: @yellow;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: left 25px center;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @hover;
+    .transition();
+  }
+}
+
+.top__block {
+  max-width: 200px;
+  padding-left: 35px;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: left center;
+  
+  &--phone {
+    background-image: url(../img/icons/icon-phone.svg);
+  }
+  
+  &--time {
+    background-image: url(../img/icons/icon-clock.svg);
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.top__bold {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.top__comment {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: #909090;
+}
+
+.top__menu {
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 17px;
+  border-left: 1px solid #f2f2f2;
+}
+
+.top__menu-btn {
+  display: none;
+}
+
+.top__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.top__item {
+  margin-left: 17px;
+  margin-right: 17px;
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+  
+  &--cabinet {
+    padding-left: 28px;
+    background-image: url(../img/icons/icon-avatar.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left center;
+  }
+}
