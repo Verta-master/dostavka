@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dostavkasmesi</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Roboto:500,700i,900i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <div class="top__main">
+        <div class="top__service">
+          <div class="top__block top__block--phone">
+            <a href="tel:+74995684411" class="top__bold">+7 (499) 568-44-11</a>
+            <a href="mailto:stroidostavka@mail.ru" class="top__comment">stroidostavka@mail.ru</a>
+          </div>
+          <div class="top__block top__block--time">
+            <span class="top__bold">С 8:00 до 20:00</span>
+            <span class="top__comment">Без перерывов и выходных</span>
+          </div>
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Поиск по каталогу">
+            <button type="submit" class="search__btn"></button>
+          </form>
+          <a href="#" class="top__btn">Заказать звонок</a>
+        </div>
+        
+        <div class="top__nav">
+          <nav class="menu">
+            <button type="button" class="menu__btn">Каталог товаров</button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Строительные материалы</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem"><a href="#">Кирпич</a></li>
+                  <li class="menu__subitem"><a href="#">Цемент</a></li>
+                  <li class="menu__subitem"><a href="#">Поддоны</a></li>
+                  <li class="menu__subitem"><a href="#">Пиломатериалы</a></li>
+                  <li class="menu__subitem"><a href="#">Металлопрокат</a></li>
+                  <li class="menu__subitem"><a href="#">Сетки</a></li>
+                  <li class="menu__subitem"><a href="#">Арматура</a></li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Сухие смеси</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Гвозди и шурупы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отделочные материалы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Строительные блоки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Электрика</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Теплоизоляция</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="top__menu">
+            <button type="button" class="top__menu-btn"></button>
+            <ul class="top__list">
+              <li class="top__item">
+                <a href="#">Доставка и подъем</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Оплата</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="top__item top__item--cabinet">
+                <a href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="cart">
+            <b>Корзина</b>
+            <span class="cart__price">99 000 руб.</span>
+            <span class="cart__number">12</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo">
+      <div class="wrapper">
+        <div class="swiper-container promo__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
+              <p class="promo__title">Строительные материалы<br>со скидкой 35% в мае</p>
+              <p>Только в мае получите специальную скидку на все строительные материалы при заказе на сумму от 50 00 рублей</p>
+              <a href="#" class="btn promo__btn">Узнать подробнее</a>
+            </div>
+            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
+              <p class="promo__title">Сухие смеси<br>Волма</p>
+              <a href="#" class="btn promo__btn">Купить</a>
+            </div>
+            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
+              <p class="promo__title">Гипсокартон<br>knauf</p>
+              <a href="#" class="btn promo__btn">Купить</a>
+            </div>
+          </div>
+          <div class="swiper-pagination promo__pagination"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="catalog">
+      <div class="wrapper tabs" id="tabs">
+        <div class="catalog__top">
+          <p class="title">Лидеры продаж</p>
+          <ul class="tabs__title">
+            <li class="tabs__name"><a href="#tabs-1">Все товары</a></li>
+            <li class="tabs__name"><a href="#tabs-2">Сухие смеси</a></li>
+            <li class="tabs__name"><a href="#tabs-3">Измерительные приборы</a></li>
+            <li class="tabs__name"><a href="#tabs-4">Инертные материалы</a></li>
+            <li class="tabs__name"><a href="#tabs-5">Электрика</a></li>
+          </ul>
+        </div>
+        <div class="tabs__field" id="tabs-1">
+          <div class="swiper-container tabs__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-1.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Опора Стульчик толщина стенки 2,6 мм 35-50 мм</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__btns">
+                    <p class="catalog__price">3,5 руб.</p>
+                    <a href="#" class="catalog__buy">Купить</a>
+                  </div>
+                  <div class="catalog__value">
+                    <button type="button" class="catalog__num catalog__minus">-</button>
+                    <input type="text" class="catalog__input" placeholder="Кол-во: 1">
+                    <button type="button" class="catalog__num catalog__plus">+</button>
+                  </div>
+                  <a href="#" class="catalog__click">Купить в один клик</a>
+                </form>
+              </div>
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-2.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Профиль потолочный (ПП) кнауф 60х27х0,6 мм</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <div class="catalog__btns">
+                  <p class="catalog__price">1 990 руб.</p>
+                  <a href="#" class="catalog__buy">Купить</a>
+                </div>
+              </div>
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-3.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Рулетка USP Хард 17206 5 м</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <div class="catalog__btns">
+                  <p class="catalog__price">567 руб.</p>
+                  <a href="#" class="catalog__buy">Купить</a>
+                </div>
+              </div>
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-4.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Бензопила Husqvarna 236 9666399-06</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <div class="catalog__btns">
+                  <p class="catalog__price">11 209 руб.</p>
+                  <a href="#" class="catalog__buy">Купить</a>
+                </div>
+              </div>
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-5.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Арматура А500С класс А3 диаметр 14 мм 5,85 м</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <div class="catalog__btns">
+                  <p class="catalog__price">3,5 руб.</p>
+                  <a href="#" class="catalog__buy">Купить</a>
+                </div>
+              </div>
+              <div class="swiper-slide catalog__slide">
+                <span class="catalog__articul">Арт.: 1231244</span>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-6.jpg" alt="Товары недели">
+                </a>
+                <p class="catalog__title"><a href="#">Шпатлевка гипсовая Knauf Фуген серая 25 кг</a></p>
+                <p class="catalog__brand">Производитель: Канкорд</p>
+                <div class="catalog__btns">
+                  <p class="catalog__price">3,5 руб.</p>
+                  <a href="#" class="catalog__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev tabs__prev"></div>
+          <div class="swiper-button-next tabs__next"></div>
+        </div>
+        <div class="tabs__field" id="tabs-2">
+          Tab 2
+        </div>
+        <div class="tabs__field" id="tabs-3">
+          Tab 3
+        </div>
+        <div class="tabs__field" id="tabs-4">
+          Tab 4
+        </div>
+        <div class="tabs__field" id="tabs-5">
+          Tab 5
+        </div>
+      </div>
+    </section>
+    
+    <section class="catalog">
+      <div class="wrapper">
+        <p class="title">Акции и скидки</p>
+        <ul class="catalog__sale">
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-5.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Арматура А500С класс А3 диаметр 14 мм 5,85 м</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">3,5 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-6.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Шпатлевка гипсовая Knauf Фуген серая 25 кг</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">3,5 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-7.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Шпатлевка универсальная Danogips Sheetrock SuperFinish 3л</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">567 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-4.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Бензопила Husqvarna 236 9666399-06</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">11 209 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="catalog">
+      <div class="wrapper catalog__block">
+        <p class="title">Новые поступления</p>
+        <div class="swiper-container catalog__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-5.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Арматура А500С класс А3 диаметр 14 мм 5,85 м</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">3,5 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-6.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Шпатлевка гипсовая Knauf Фуген серая 25 кг</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">3,5 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-7.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Шпатлевка универсальная Danogips Sheetrock SuperFinish 3л</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">567 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-4.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Бензопила Husqvarna 236 9666399-06</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">11 209 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-5.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Арматура А500С класс А3 диаметр 14 мм 5,85 м</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">3,5 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+            <div class="swiper-slide catalog__slide">
+              <span class="catalog__articul">Арт.: 1231244</span>
+              <a href="#" class="catalog__img">
+                <img src="img/images/img-6.jpg" alt="Товары недели">
+              </a>
+              <p class="catalog__title"><a href="#">Шпатлевка гипсовая Knauf Фуген серая 25 кг</a></p>
+              <p class="catalog__brand">Производитель: Канкорд</p>
+              <div class="catalog__btns">
+                <p class="catalog__price">3,5 руб.</p>
+                <a href="#" class="catalog__buy">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination catalog__pagination"></div>
+        </div>
+        <div class="swiper-button-prev catalog__prev"></div>
+        <div class="swiper-button-next catalog__next"></div>
+      </div>
+    </section>
+    
+    <section class="catalog">
+      <div class="wrapper catalog__wrap">
+        <div class="catalog__promo">
+          <p class="catalog__name">Товары недели</p>
+          <p>Самые популярные товары на этой неделе по количеству заказов</p>
+          <a href="#" class="btn catalog__btn">Посмотреть все</a>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-6.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Шпатлевка гипсовая Knauf Фуген серая 25 кг</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">3,5 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-7.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Шпатлевка универсальная Danogips Sheetrock SuperFinish 3л</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">567 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__articul">Арт.: 1231244</span>
+            <a href="#" class="catalog__img">
+              <img src="img/images/img-4.jpg" alt="Товары недели">
+            </a>
+            <p class="catalog__title"><a href="#">Бензопила Husqvarna 236 9666399-06</a></p>
+            <p class="catalog__brand">Производитель: Канкорд</p>
+            <div class="catalog__btns">
+              <p class="catalog__price">11 209 руб.</p>
+              <a href="#" class="catalog__buy">Купить</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="brands">
+      <div class="wrapper">
+        <p class="title">Производители</p>
+        <div class="swiper-container brands__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-1.png" alt="Производители">
+              </a>
+            </div>
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-2.png" alt="Производители">
+              </a>
+            </div>
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-3.png" alt="Производители">
+              </a>
+            </div>
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-4.png" alt="Производители">
+              </a>
+            </div>
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-5.png" alt="Производители">
+              </a>
+            </div>
+            <div class="swiper-slide brands__slide">
+              <a href="#" class="brands__link">
+                <img src="img/images/logo-6.png" alt="Производители">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination brands__pagination"></div>
+          <div class="swiper-button-prev brands__prev"></div>
+          <div class="swiper-button-next brands__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about">
+      <div class="wrapper about__wrap">
+        <p class="about__title">О нашем магазине</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <p>В нашем магазине<br>10 000 позиций</p>
+          </li>
+          <li class="about__item">
+            <p>Доставляем товар<br>в день заказа</p>
+          </li>
+          <li class="about__item">
+            <p>Вся поставляемая продукция<br>сертифицирована</p>
+          </li>
+          <li class="about__item">
+            <p>Гибкая система скидок,<br>акции и спецпредложений</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="top">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <div class="top__main">
+        <div class="top__service">
+          <div class="top__block top__block--phone">
+            <a href="tel:+74995684411" class="top__bold">+7 (499) 568-44-11</a>
+            <a href="mailto:stroidostavka@mail.ru" class="top__comment">stroidostavka@mail.ru</a>
+          </div>
+          <div class="top__block top__block--time">
+            <span class="top__bold">С 8:00 до 20:00</span>
+            <span class="top__comment">Без перерывов и выходных</span>
+          </div>
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Поиск по каталогу">
+            <button type="submit" class="search__btn"></button>
+          </form>
+          <a href="#" class="top__btn">Заказать звонок</a>
+        </div>
+        
+        <div class="top__nav">
+          <nav class="top__menu">
+            <button type="button" class="top__menu-btn"></button>
+            <ul class="top__list">
+              <li class="top__item">
+                <a href="#">Доставка и подъем</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Оплата</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="top__item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="top__item top__item--cabinet">
+                <a href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+          <span>Все права защищены</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.promo__slider', {
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      loop: true,
+      centeredSlides: true,
+    });
+    
+    var mySwiper = new Swiper ('.brands__slider', {
+      pagination: {
+        el: '.brands__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.brands__next',
+        prevEl: '.brands__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      loop: true,
+    });
+    
+    var mySwiper = new Swiper ('.catalog__slider', {
+      pagination: {
+        el: '.catalog__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.catalog__next',
+        prevEl: '.catalog__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+    
+    var mySwiper = new Swiper ('.tabs__slider', {
+      navigation: {
+        nextEl: '.tabs__next',
+        prevEl: '.tabs__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+  </script>
+</body>
+</html>
