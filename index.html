@@ -155,12 +155,14 @@
                     <p class="catalog__price">3,5 руб.</p>
                     <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <div class="catalog__value">
-                    <button type="button" class="catalog__num catalog__minus">-</button>
-                    <input type="text" class="catalog__input" placeholder="Кол-во: 1">
-                    <button type="button" class="catalog__num catalog__plus">+</button>
+                  <div class="catalog__order">
+                    <div class="catalog__value">
+                      <button type="button" class="catalog__num catalog__minus">-</button>
+                      <input type="text" class="catalog__input" placeholder="Кол-во: 1">
+                      <button type="button" class="catalog__num catalog__plus">+</button>
+                    </div>
+                    <a href="#" class="catalog__click">Купить в один клик</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в один клик</a>
                 </form>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -475,8 +477,8 @@
       </div>
     </section>
     
-    <section class="about">
-      <div class="wrapper about__wrap">
+    <section class="about wrapper">
+      <div class="about__wrap">
         <p class="about__title">О нашем магазине</p>
         <ul class="about__list">
           <li class="about__item">
@@ -534,12 +536,9 @@
               <li class="top__item">
                 <a href="#">Отзывы</a>
               </li>
-              <li class="top__item top__item--cabinet">
-                <a href="#">Личный кабинет</a>
-              </li>
             </ul>
           </nav>
-          <span>Все права защищены</span>
+          <span class="top__copyright">Все права защищены</span>
         </div>
       </div>
     </div>
@@ -569,7 +568,6 @@
       slidesPerView: 'auto',
       spaceBetween: 20,
       loop: true,
-//      centeredSlides: true,
     });
     
     var mySwiper = new Swiper ('.brands__slider', {

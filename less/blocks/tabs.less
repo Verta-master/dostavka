@@ -1,0 +1,30 @@
+.tabs {
+  position: relative;
+  padding-top: 20px;
+}
+
+.tabs__title {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 115px;
+  margin-bottom: 25px;
+  
+  .ui-tabs-active {
+    color: #000;
+    font-weight: 700;
+    border-color: @yellow;
+  }
+}
+
+.tabs__name {
+  margin-left: 25px;
+  color: #909090;
+  border-bottom: 4px solid rgba(255,255,255,0);
+  
+  a {
+    outline: none;
+  }
+}
