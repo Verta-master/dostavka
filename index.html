@@ -104,17 +104,23 @@
         <div class="swiper-container promo__slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
-              <p class="promo__title">Строительные материалы<br>со скидкой 35% в мае</p>
-              <p>Только в мае получите специальную скидку на все строительные материалы при заказе на сумму от 50 00 рублей</p>
-              <a href="#" class="btn promo__btn">Узнать подробнее</a>
+              <div class="promo__info">
+                <p class="promo__title">Гипсокартон<br>knauf</p>
+                <a href="#" class="btn promo__btn">Купить</a>
+              </div>
             </div>
-            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
-              <p class="promo__title">Сухие смеси<br>Волма</p>
-              <a href="#" class="btn promo__btn">Купить</a>
+            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-2.jpg)">
+              <div class="promo__info">
+                <p class="promo__title">Строительные материалы<br>со скидкой 35% в мае</p>
+                <p>Только в мае получите специальную скидку на все строительные материалы при заказе на сумму от 50 00 рублей</p>
+                <a href="#" class="btn promo__btn">Узнать подробнее</a>
+              </div>
             </div>
-            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-1.jpg)">
-              <p class="promo__title">Гипсокартон<br>knauf</p>
-              <a href="#" class="btn promo__btn">Купить</a>
+            <div class="swiper-slide promo__slide" style="background-image: url(img/images/banner-3.jpg)">
+              <div class="promo__info">
+                <p class="promo__title">Сухие смеси<br>Волма</p>
+                <a href="#" class="btn promo__btn">Купить</a>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination promo__pagination"></div>
@@ -563,7 +569,7 @@
       slidesPerView: 'auto',
       spaceBetween: 20,
       loop: true,
-      centeredSlides: true,
+//      centeredSlides: true,
     });
     
     var mySwiper = new Swiper ('.brands__slider', {
