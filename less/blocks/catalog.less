@@ -40,6 +40,7 @@
   opacity: 1;
 }
 
+.catalog__week,
 .catalog__item,
 .catalog__slide {
   position: relative;
@@ -237,4 +238,54 @@
 
 .catalog__slider {
   padding-bottom: 45px;
+}
+
+.catalog__wrap {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-top: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.catalog__promo {
+  width: 295px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/images/shape-week.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.catalog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+}
+
+.catalog__name {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.catalog__btn {
+  width: 210px;
+  font-size: 16px;
+}
+
+.catalog__week {
+  width: 315px;
+  border: 0;
+  border-right: 1px solid rgb(238, 238, 238);
 }
