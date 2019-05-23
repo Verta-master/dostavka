@@ -59,3 +59,73 @@
     width: 300px;
   }
 }
+//-----------------------------------------------------------------------
+@media (max-width: 1278px) {
+  .wrapper {
+    width: 100%;
+  }
+  .menu__btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    padding-left: 0;
+    font-size: 0;
+    background-position: center;
+  }
+  .top__service,
+  .menu {
+    padding-left: 20px;
+  }
+  .top__menu {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .top__btn,
+  .header .search {
+    display: none;
+  }
+  .search {
+    width: 250px;
+  }
+  .promo__slider .swiper-slide-next {
+    width: 354px !important;
+  }
+  .promo__info {
+    padding-top: 50px;
+  }
+  .promo__btn {
+    bottom: 20px;
+  }
+  .catalog__top {
+    display: block;
+  }
+  .tabs__name {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .catalog__slider,
+  .catalog__sale,
+  .tabs__slider {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog__item {
+    &:nth-child(4) {
+      display: none;
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  .catalog__week:nth-child(3) {
+    display: none;
+  }
+  .brands__slider {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
