@@ -814,6 +814,9 @@ button {
           box-sizing: border-box;
   color: #000;
   font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .promo__slide p {
   max-width: 280px;
@@ -1244,8 +1247,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 115px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 25px;
+  padding-right: 105px;
 }
 .tabs__title .ui-tabs-active {
   color: #000;
@@ -1263,6 +1268,10 @@ button {
 .tabs__prev,
 .tabs__next {
   top: 40px;
+}
+.tabs__slider {
+  padding-top: 15px;
+  padding-bottom: 135px;
 }
 .about {
   margin-bottom: 70px;
