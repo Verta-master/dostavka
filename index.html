@@ -7,6 +7,7 @@
   <title>Dostavkasmesi</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Roboto:500,700i,900i&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -29,7 +30,7 @@
             <input type="text" class="search__input" placeholder="Поиск по каталогу">
             <button type="submit" class="search__btn"></button>
           </form>
-          <a href="#" class="top__btn">Заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="top__btn">Заказать звонок</a>
         </div>
         
         <div class="top__nav">
@@ -84,7 +85,7 @@
                 <a href="#">Отзывы</a>
               </li>
               <li class="top__item top__item--cabinet">
-                <a href="#">Личный кабинет</a>
+                <a data-fancybox data-src="#login" href="javascript:;">Личный кабинет</a>
               </li>
             </ul>
           </nav>
@@ -161,7 +162,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -183,7 +184,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -205,7 +206,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -227,7 +228,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -249,7 +250,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -271,7 +272,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -293,7 +294,7 @@
                       <input type="text" class="catalog__input" placeholder="Кол-во: 1">
                       <button type="button" class="catalog__num catalog__plus">+</button>
                     </div>
-                    <a href="#" class="catalog__click">Купить в один клик</a>
+                    <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в один клик</a>
                   </div>
                 </form>
               </div>
@@ -807,7 +808,7 @@
             <input type="text" class="search__input" placeholder="Поиск по каталогу">
             <button type="submit" class="search__btn"></button>
           </form>
-          <a href="#" class="top__btn">Заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="top__btn">Заказать звонок</a>
         </div>
         
         <div class="top__nav">
@@ -834,10 +835,83 @@
     </div>
   </footer>
   
+  <!-- Modal windows -->
+  <div style="display: none;" id="login" class="modal">
+    <p class="modal__title">Войти в личный кабинет</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Введите e-mail, телефон или логин">
+      <input type="password" class="modal__input" placeholder="Введите пароль">
+      <div class="modal__wrap">
+        <a href="#" class="modal__restore">Забыли пароль?</a>
+        <a href="#" class="modal__reg">Регистрация</a>
+      </div>
+      <button type="submit" class="modal__btn">Войти в личный кабинет</button>
+      <input type="checkbox" id="check" class="modal__checkbox" checked>
+      <label for="check" class="modal__check">Запомнить меня</label>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Как вас зовут?">
+      <input type="tel" class="modal__input" placeholder="Ваш номер телефона">
+      <button type="submit" class="modal__btn">Отправить</button>
+      <p class="modal__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных»</a>.</p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="reg" class="modal">
+    <p class="modal__title">Регистрация в личном кабинет</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Введите e-mail, телефон или логин">
+      <input type="tel" class="modal__input" placeholder="Ваш телефон">
+      <input type="password" class="modal__input" placeholder="Введите пароль">
+      <input type="password" class="modal__input" placeholder="Повторите пароль">
+      <button type="submit" class="modal__btn">Зарегистрироваться</button>
+      <p class="modal__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных»</a>.</p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="click" class="modal">
+    <p class="modal__title">Купить в один клик</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Как вас зовут?">
+      <input type="tel" class="modal__input" placeholder="Ваш номер телефона">
+      <button type="submit" class="modal__btn">Отправить</button>
+      <p class="modal__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных»</a>.</p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="restore" class="modal">
+    <p class="modal__title">Восстановить пароль</p>
+    <form action="#" class="modal__form">
+      <input type="email" class="modal__input" placeholder="Введите вашу почту">
+      <button type="submit" class="modal__btn">Восстановить пароль</button>
+      <p class="modal__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных»</a>.</p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="ready1" class="modal">
+    <p class="modal__slogan">Готово!</p>
+    <p class="modal__text">Ожидайте звонка Вашего менеджера –<br>он поможет совершить покупку.</p>
+  </div>
+  
+  <div style="display: none;" id="ready2" class="modal">
+    <p class="modal__slogan">Готово!</p>
+    <p class="modal__text">Мы отправили письмо с инструкцией для восстановления пароля на вашу почту.</p>
+  </div>
+  
+  <div style="display: none;" id="ready3" class="modal">
+    <p class="modal__slogan">Готово!</p>
+    <p class="modal__text">Спасибо за ваше обращение! Через 2 минуты наш менеджер свяжется с вами для решения вашего вопроса.</p>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   
   <!-- Tabs -->
   <script>
