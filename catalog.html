@@ -196,7 +196,8 @@
               </div>
             </div>
             
-            <ul class="catalog__list catalog__list--table">
+<!--            <ul class="catalog__list catalog__list--table">-->
+            <ul class="catalog__list catalog__list--plate">
               <li class="catalog__week">
                 <span class="catalog__articul">Арт.: 1231244</span>
                 <a href="#" class="catalog__img">
@@ -750,6 +751,24 @@
     $('.filter__open').click(function() {
       $(this).next().slideToggle();
       $(this).toggleClass('filter__open--closed');
+    });
+  </script>
+  
+  <!-- Catalog view switch -->
+  <script>
+    $('.products__btn--table').click(function(e) {
+      e.preventDefault();
+      $('.products__btn--plate').removeClass('products__btn--active');
+      $(this).addClass('products__btn--active');
+      $('.catalog__list').removeClass('catalog__list--plate');
+      $('.catalog__list').addClass('catalog__list--table');
+    });
+    $('.products__btn--plate').click(function(e) {
+      e.preventDefault();
+      $('.products__btn--table').removeClass('products__btn--active');
+      $(this).addClass('products__btn--active');
+      $('.catalog__list').removeClass('catalog__list--table');
+      $('.catalog__list').addClass('catalog__list--plate');
     });
   </script>
 </body>
