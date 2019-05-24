@@ -1,0 +1,141 @@
+.products {
+  margin-bottom: 20px;
+}
+
+.products__links {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.products__link {
+  width: 295px;
+  height: 115px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgb(238, 238, 238);
+  .transition();
+  
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+  
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  p {
+    margin: 0;
+    width: 155px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+  }
+  
+  &:hover,
+  &:active {
+    border-color: #fff;
+    box-shadow: 0px 0px 35px 0px rgba(216, 216, 216, 0.25);
+    .transition();
+  }
+}
+
+.products__img {
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+  }
+}
+
+.products__sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products__option {
+  display: block;
+  margin-left: 50px;
+  color: #909090;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #000;
+  }
+  
+  &--arrows {
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: -30px;
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/icons/icon-sort.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.products__wrap {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.products__btn {
+  width: 21px;
+  height: 21px;
+  margin-left: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+  &--plate {
+    background-image: url(../img/icons/icon-plate.png);
+  }
+  
+  &--table {
+    background-image: url(../img/icons/icon-table.png);
+  }
+  
+  &:not(.products__btn--active) {
+    opacity: 0.5;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.products__more {
+  display: block;
+  width: 100%;
+  height: 80px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid rgb(238, 238, 238);
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}

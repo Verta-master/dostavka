@@ -281,6 +281,26 @@
   list-style: none;
   display: flex;
   flex-grow: 1;
+  
+  &--table {
+    flex-wrap: wrap;
+    
+    .catalog__week {
+      width: 295px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: 1px solid rgb(238, 238, 238);
+      
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+      
+      &:hover,
+      &:active {
+        border: 0;
+      }
+    }
+  }
 }
 
 .catalog__name {
