@@ -833,6 +833,7 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+h1,
 .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -842,6 +843,13 @@ button {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: -0.05em;
+}
+h2,
+.title-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .promo {
   padding-top: 40px;
@@ -1061,6 +1069,8 @@ button {
   background-size: contain;
 }
 .catalog__buy {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1145,6 +1155,7 @@ button {
   font-style: italic;
 }
 .catalog__click {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1201,6 +1212,7 @@ button {
 .catalog__block {
   position: relative;
 }
+.catalog__related,
 .catalog__slider {
   padding-bottom: 55px;
   padding-top: 15px;
@@ -1802,6 +1814,7 @@ button {
 }
 .filter__form {
   padding: 20px;
+  padding-top: 30px;
 }
 .filter__field {
   margin-bottom: 20px;
@@ -1840,7 +1853,7 @@ button {
 }
 .filter__check {
   padding-left: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   color: #1f1f1f;
 }
 .filter__checkbox:checked + .filter__check::after {
@@ -1850,7 +1863,7 @@ button {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 15px;
   line-height: 1;
   text-align: left;
@@ -1892,7 +1905,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 .filter__wrap span {
   font-size: 15px;
@@ -1921,6 +1935,7 @@ button {
   opacity: 1;
 }
 .filter__range {
+  margin-bottom: 10px;
   /* Ползунок */
   /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
   /* позиционируем ползунки */
@@ -2215,6 +2230,269 @@ a.pages__link:active {
   margin-left: 10px;
   margin-right: 10px;
 }
+.card {
+  margin-top: 35px;
+}
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.card__wrap .title {
+  margin-bottom: 5px;
+}
+.card__img {
+  position: relative;
+  width: 400px;
+  height: 310px;
+  border: 1px solid #eeeeee;
+}
+.card__slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__pagination {
+  bottom: -11px;
+  left: 50%;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.card__pagination .swiper-pagination-bullet {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.card__prev,
+.card__next {
+  top: 50%;
+  background-image: url(../img/icons/right-arrow.svg);
+  background-color: #fff;
+}
+.card__prev {
+  left: 0;
+}
+.card__next {
+  right: 0;
+}
+.card__slider .swiper-button-next.swiper-button-disabled,
+.card__slider .swiper-button-prev.swiper-button-disabled {
+  background-color: #fff;
+}
+.card__form {
+  width: 295px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+}
+.card__info {
+  width: calc(100% - 695px);
+  padding: 20px;
+}
+.card__articul {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #909090;
+}
+.card__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-style: italic;
+  color: #909090;
+}
+.card__logo {
+  width: 90px;
+  height: 55px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  border: 1px solid #eeeeee;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.card__logo:hover,
+.card__logo:active {
+  border-color: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(216, 216, 216, 0.25);
+          box-shadow: 0px 0px 35px 0px rgba(216, 216, 216, 0.25);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+blockquote {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 20px 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #909090;
+  line-height: 18px;
+  border: 2px dashed #fbdf6d;
+}
+.card__tabs {
+  max-width: 925px;
+  margin-bottom: 20px;
+}
+.card__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  background-color: #f8f8f8;
+}
+.card__title .ui-tabs-active {
+  border-color: #fbdf6d;
+}
+.card__name {
+  margin-right: 55px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+.card__name a {
+  outline: none;
+}
+.card__field {
+  padding: 20px 27px;
+}
+.card__field ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card__field ul li {
+  position: relative;
+  padding-left: 30px;
+}
+.card__field ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fbdf6d;
+}
+.card__field ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: myCounter;
+}
+.card__field ol li {
+  position: relative;
+  padding-left: 30px;
+}
+.card__field ol li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 50%;
+  border: 2px solid #fbdf6d;
+}
+.card__table td {
+  width: 170px;
+  height: 33px;
+  vertical-align: bottom;
+}
+.card__table td:first-child {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  padding-bottom: 5px;
+}
+.card__table td:first-child span {
+  padding-right: 15px;
+  line-height: 1.2;
+}
+.card__table td:first-child::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  margin-bottom: 3px;
+  background-color: #efefef;
+}
+.card__table td:nth-child(2) {
+  padding-left: 20px;
+}
 @media (max-width: 1910px) {
   .wrapper {
     max-width: 1595px;
@@ -2291,6 +2569,16 @@ a.pages__link:active {
   .search {
     width: 300px;
   }
+  .logo {
+    width: 210px;
+  }
+  .top__service,
+  .menu {
+    padding-left: 20px;
+  }
+  .top__menu {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 1278px) {
   .wrapper {
@@ -2304,14 +2592,9 @@ a.pages__link:active {
     font-size: 0;
     background-position: center;
   }
-  .top__service,
-  .menu {
-    padding-left: 20px;
-  }
   .top__menu {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 20px;
     padding-right: 20px;
   }
   .footer .top__btn,
@@ -2337,6 +2620,7 @@ a.pages__link:active {
     margin-left: 0;
     margin-right: 25px;
   }
+  .catalog__related,
   .catalog__slider,
   .catalog__sale,
   .tabs__slider {
@@ -2373,6 +2657,22 @@ a.pages__link:active {
     width: 820px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .card__wrap {
+    display: block;
+    position: relative;
+    padding-left: 400px;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .card__form {
+    margin-left: 20px;
   }
 }
 @media (max-width: 1022px) {
@@ -2459,6 +2759,7 @@ a.pages__link:active {
   .tabs__title {
     padding-right: 0;
   }
+  .catalog__related,
   .catalog__sale,
   .catalog__slider,
   .tabs__slider {
@@ -2529,6 +2830,21 @@ a.pages__link:active {
     margin-top: 15px;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .card__img {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .card__wrap {
+    padding-left: 0;
+  }
+  .card__info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card__form {
+    margin-left: 0;
   }
 }
 @media (max-width: 766px) {
@@ -2607,6 +2923,7 @@ a.pages__link:active {
   .brands__slider {
     width: 190px;
   }
+  .catalog__related,
   .catalog__wrap,
   .catalog__sale,
   .catalog__slider,
@@ -2622,6 +2939,11 @@ a.pages__link:active {
   .swiper-button-prev {
     bottom: 0;
     top: auto;
+  }
+  .card__next,
+  .card__prev {
+    top: 50%;
+    bottom: auto;
   }
   .tabs__title {
     -ms-flex-wrap: wrap;
@@ -2684,5 +3006,39 @@ a.pages__link:active {
   .pages__link,
   .pages__move {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .card__img {
+    width: 100%;
+  }
+  .card__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__name {
+    margin-right: 0;
+  }
+  .card__field {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card__table {
+    width: 100%;
+  }
+  .card__table td {
+    width: 50%;
+  }
+  .card__table td:first-child::after {
+    display: none;
+  }
+  .card__table td:first-child {
+    padding-bottom: 1px;
+  }
+  .card__form {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
