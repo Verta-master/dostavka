@@ -1,0 +1,121 @@
+.card {
+  margin-top: 40px;
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.card__img {
+  position: relative;
+  width: 400px;
+  height: 310px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.card__slide {
+  box-sizing: border-box;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__pagination {
+  bottom: -11px;
+  left: 50%;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  
+  .swiper-pagination-bullet {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.card__prev,
+.card__next {
+  top: 50%;
+  background-image: url(../img/icons/right-arrow.svg);
+  background-color: #fff;
+}
+
+.card__prev {
+  left: 0;
+}
+
+.card__next {
+  right: 0;
+}
+
+.card__slider {
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    background-color: #fff;
+  }
+}
+
+.card__form {
+  width: 295px;
+  padding: 20px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.card__info {
+  width: ~"calc(100% - 695px)";
+  padding: 20px;
+}
+
+.card__articul {
+  margin-top: 0;
+  font-size: 14px;
+  color: #909090;
+}
+
+.card__brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-style: italic;
+  color: #909090;
+}
+
+.card__logo {
+  width: 90px;
+  height: 55px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border: 1px solid rgb(238, 238, 238);
+  .transition();
+  
+  &:hover,
+  &:active {
+    border-color: rgba(255,255,255,0);
+    box-shadow: 0px 0px 35px 0px rgba(216, 216, 216, 0.25);
+    .transition();
+  }
+}
+
+blockquote {
+  width: 100%;
+  .reset();
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 14px;
+  color: #909090;
+  line-height: 18px;
+  border: 2px dashed @yellow;
+}
