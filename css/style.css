@@ -2534,9 +2534,15 @@ blockquote {
   .catalog__list--main .catalog__week:nth-child(4) {
     display: none;
   }
+  .products__link,
+  .catalog__list--plate .catalog__week {
+    margin-right: 10px;
+  }
+  .products__link:nth-child(5n),
+  .catalog__list--plate .catalog__week:nth-child(5n),
   .products__link:nth-child(4n),
   .catalog__list--plate .catalog__week:nth-child(4n) {
-    margin-right: 16px;
+    margin-right: 10px;
   }
   .products__link:nth-child(3n),
   .catalog__list--plate .catalog__week:nth-child(3n) {
@@ -2640,7 +2646,7 @@ blockquote {
   }
   .products__link:nth-child(3n),
   .catalog__list--plate .catalog__week:nth-child(3n) {
-    margin-right: 16px;
+    margin-right: 10px;
   }
   .products__link:nth-child(2n),
   .catalog__list--plate .catalog__week:nth-child(2n) {
